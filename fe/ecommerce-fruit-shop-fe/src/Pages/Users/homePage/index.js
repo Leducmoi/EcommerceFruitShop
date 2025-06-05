@@ -1,13 +1,11 @@
-import { memo } from "react";
+  import { memo } from "react";
 
-const HomePage = () => {
-  return (
-    <>
-      <h1>Header</h1>
-      <h1>Body</h1>
-      <h1>Footer</h1>
-    </>
-  );
-}
+  const HomePage = () => {
+    return (
+      <>
+        <h1>Home Page</h1>
+      </>
+    );
+  }
 
-export default memo(HomePage);
+  export default memo(HomePage);
