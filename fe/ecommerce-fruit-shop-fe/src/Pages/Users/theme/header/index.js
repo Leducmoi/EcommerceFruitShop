@@ -6,63 +6,78 @@ import { formatCurrency } from "Utils/formater";
 
 const header = () => {
   return (
-    <div className="header-top">
-      <div className="container">
-        <div className="row">
+    <>  
+      <div className="header-top">
+        <div className="container">
+          <div className="row">
 
 
-          <div className="col-6 header-top__left">
-            <ul>
-              <li><AiOutlineMail /><p>Hello@gmail.com</p></li>
+            <div className="col-6 header-top__left">
+              <ul>
+                <li><AiOutlineMail /><p>Hello@gmail.com</p></li>
 
-              <li>
-                Miễn phí vận chuyển cho đơn hàng từ&nbsp;
-                <span className="price">{formatCurrency(500000)}</span>
-              </li>
-            </ul>
-          </div>
-
-
+                <li>
+                  Miễn phí vận chuyển cho đơn hàng từ&nbsp;
+                  <span className="price">{formatCurrency(500000)}</span>
+                </li>
+              </ul>
+            </div>
 
 
-          <div className="col-6 header-top__right">
-            <ul>
-              <li>
-                <Link to={""}>
-                  <AiOutlineFacebook />
-                </Link>
 
-              </li>
-              <li>
-                <Link to={""}>
-                  <AiOutlineTwitter />
-                </Link>
 
-              </li>
-              <li>
-                <Link to={""}>
-                  <AiOutlineInstagram />
-                </Link>
+            <div className="col-6 header-top__right">
+              <ul>
+                <li>
+                  <Link to={""}>
+                    <AiOutlineFacebook />
+                  </Link>
 
-              </li>
-              <li>
-                <Link to={""}>
-                  <AiOutlineLinkedin />
-                </Link>
+                </li>
+                <li>
+                  <Link to={""}>
+                    <AiOutlineTwitter />
+                  </Link>
 
-              </li>
+                </li>
+                <li>
+                  <Link to={""}>
+                    <AiOutlineInstagram />
+                  </Link>
 
-              <li>
-                <Link to={""}>
-                  <AiOutlineUser />
-                </Link>
-                <span>Đăng nhập</span>
-              </li>
-            </ul>
+                </li>
+                <li>
+                  <Link to={""}>
+                    <AiOutlineLinkedin />
+                  </Link>
+
+                </li>
+
+                <li>
+                  <Link to={""}>
+                    <AiOutlineUser />
+                  </Link>
+                  <span>Đăng nhập</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+
+      <div className="header-bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-3 col-lg-3 header-bottom__logo">LOGO</div>
+            <div className="col-xl-6 col-lg-6 header-bottom__menu">MENU</div>
+            <div className="col-xl-3 col-lg-3 header-bottom__phone">PHONE</div>
+          </div>
+        </div>
+
+      </div>
+    </>
+    
   );
 }
 
